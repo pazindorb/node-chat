@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node app.js",
-    "test": "node public/js/mytest.test.js"
+    "test": "jest public/js/mytest.test.js"
   },
   "dependencies": {
     "jest": "^24.9.0",
