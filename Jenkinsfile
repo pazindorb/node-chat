@@ -14,7 +14,7 @@ pipeline {
                         body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}",
                         recipientProviders: [developers(), requestor()],
                         to: 'xxpazindorxx@gmail.com',
-                        subject: "Build failed ${currentBuild.currentResult}: Job ${env.JOB_NAME}"
+                        subject: "Buildddd failed ${currentBuild.currentResult}: Job ${env.JOB_NAME}"
                 }
                 success {
                     emailext attachLog: true,
@@ -30,8 +30,6 @@ pipeline {
                 echo 'Testing'
                 sh 'npm run test'
             }
-            
-            
             post {
                 failure {
                     emailext attachLog: true,
