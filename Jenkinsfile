@@ -30,6 +30,8 @@ pipeline {
                 echo 'Testing'
                 sh 'npm run test'
             }
+            
+            
             post {
                 failure {
                     emailext attachLog: true,
