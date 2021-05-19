@@ -10,4 +10,3 @@ COPY . node-chat/
 WORKDIR node-chat
 
 RUN ls
-
